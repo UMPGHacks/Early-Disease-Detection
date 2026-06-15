@@ -16,29 +16,53 @@ Machine Learning and Deep Learning integration
 
 ## 📂 Project Structure
 EDD/
+
 │
+
 ├── Heart_Model_training.ipynb
+
 ├── Liver_Model_training.ipynb
+
 ├── Symptom Model.ipynb
+
 ├── Lung Model.ipynb
+
 ├── app.py
+
 ├── model_training.py
+
 ├── README.md
+
 │
+
 ├── models/
+
 │   ├── lung_model.pt
+
 │   └── lung_labels.json
+
 │
+
 ├── dataset/
+
 │   ├── CKD/
+
 │   ├── Early_Disease_Detection.csv
+
 │   ├── Indian Liver Patient Dataset.csv
+
 │   └── Lung X-Ray Images/
+
 │       ├── Normal
+
 │       ├── Lung_Opacity
+
 │       └── Viral Pneumonia
+
 │
+
 └── requirements.txt
+
 ## 🛠️ Technologies Used
 Python
 
