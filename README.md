@@ -39,7 +39,6 @@ EDD/
 │       └── Viral Pneumonia
 │
 └── requirements.txt
-
 ## 🛠️ Technologies Used
 Python
 
