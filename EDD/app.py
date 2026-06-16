@@ -17,6 +17,13 @@ HEART_MODEL_PATH = MODELS_DIR / "heart_model.pkl"
 LIVER_MODEL_PATH = MODELS_DIR / "liver_model.pkl"
 LUNG_MODEL_PATH = MODELS_DIR / "lung_model.pt"
 
+symptom_model = None
+heart_model = None
+liver_model = None
+lung_model = None
+lung_classes = None
+lung_image_size = None
+
 HEART_FEATURES = [
     "age",
     "anaemia",
@@ -520,10 +527,17 @@ selected_module = st.sidebar.radio(
 )
 
 if selected_module == "Symptom Disease Prediction":
+    symptom_model = load_model(SYMPTOM_MODEL_PATH)
     render_symptom_prediction(symptom_model)
+
 elif selected_module == "Heart Failure Risk":
+    heart_model = load_model(HEART_MODEL_PATH)
     render_heart_prediction(heart_model)
+
 elif selected_module == "Liver Disease Detection":
+    liver_model = load_model(LIVER_MODEL_PATH)
     render_liver_prediction(liver_model)
+
 else:
+    lung_model, lung_classes, lung_image_size = load_lung_model(LUNG_MODEL_PATH)
     render_lung_module(lung_model, lung_classes, lung_image_size)
