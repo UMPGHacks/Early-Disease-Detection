@@ -1,6 +1,6 @@
 # EDD Multi Disease Detection
 
-This folder contains a unified Streamlit web app for early disease screening using the datasets available in `D:\ml project\dataset`.
+This folder contains a unified Streamlit web app for early disease screening using the datasets available in `D:\Early Disease Detection\dataset`.
 
 ## Modules
 - Symptom-based disease prediction
@@ -11,7 +11,7 @@ This folder contains a unified Streamlit web app for early disease screening usi
 ## Run
 
 ```bash
-cd "D:\ml project\EDD"
+cd "D:\Early Disease Detection\EDD"
 python model_training.py
 streamlit run app.py
 ```
@@ -26,6 +26,6 @@ streamlit run app.py
 To train the lung X-ray model:
 
 ```bash
-cd "D:\ml project\EDD"
+cd "D:\Early Disease Detection\EDD"
 python train_lung_model.py
 ```
