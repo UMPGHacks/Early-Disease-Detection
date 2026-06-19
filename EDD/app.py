@@ -420,7 +420,7 @@ def render_lung_module(lung_model, lung_classes, lung_image_size):
             st.info("This image result is an ML screening output and should be reviewed by a clinician.")
 
 
-st.set_page_config(page_title="EDD Multi Disease Detection", layout="wide")
+st.set_page_config(page_title="MDP Multi Disease Prediction", layout="wide")
 st.markdown("""
 <style>
     .hero-card {
@@ -496,7 +496,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.markdown("""
 <div class="hero-card">
-    <h1>Early Disease Detection Web App</h1>
+    <h1>Multi Disease Prediction Web App</h1>
 </div>
 """, unsafe_allow_html=True)
 
