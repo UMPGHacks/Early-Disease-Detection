@@ -526,19 +526,11 @@ selected_module = st.sidebar.radio(
     ],
 )
 
-
-if selected_module == "Heart Failure Risk":
-    heart_model = load_model(HEART_MODEL_PATH)
-    render_heart_prediction(heart_model)
-
-elif selected_module == "Symptom Disease Prediction":
-    symptom_model = load_model(SYMPTOM_MODEL_PATH)
+if selected_module == "Symptom Disease Prediction":
     render_symptom_prediction(symptom_model)
-
+elif selected_module == "Heart Failure Risk":
+    render_heart_prediction(heart_model)
 elif selected_module == "Liver Disease Detection":
-    liver_model = load_model(LIVER_MODEL_PATH)
     render_liver_prediction(liver_model)
-
 else:
-    lung_model, lung_classes, lung_image_size = load_lung_model(LUNG_MODEL_PATH)
     render_lung_module(lung_model, lung_classes, lung_image_size)
