@@ -17,12 +17,6 @@ HEART_MODEL_PATH = MODELS_DIR / "heart_model.pkl"
 LIVER_MODEL_PATH = MODELS_DIR / "liver_model.pkl"
 LUNG_MODEL_PATH = MODELS_DIR / "lung_model.pt"
 
-symptom_model = None
-heart_model = None
-liver_model = None
-lung_model = None
-lung_classes = None
-lung_image_size = None
 
 HEART_FEATURES = [
     "age",
