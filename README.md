@@ -1,5 +1,8 @@
 # 🩺 Early Disease Detection System
-An AI-powered Early Disease Detection System that predicts diseases using Machine Learning and Deep Learning models. The project includes prediction modules for Heart Disease, Liver Disease, Chronic Kidney Disease (CKD), Symptom-Based Disease Detection, and Lung Disease Detection from X-ray images.
+An AI-powered Multi Disease Prediction System that predicts diseases using Machine Learning and Deep Learning models. The project includes prediction modules for Heart Disease, Liver Disease, Chronic Kidney Disease (CKD), Symptom-Based Disease Detection, and Lung Disease Detection from X-ray images.
+
+## Live Demo
+🔗 https://multi-disease-prediction-system-4cjmzayxdsdpcciorjtsvw.streamlit.app
 
 ## 🚀 Features
 Heart Disease Prediction
@@ -37,27 +40,27 @@ EDD/
 
 ├── models/
 
-│   ├── lung_model.pt
+│     ├── lung_model.pt
 
-│   └── lung_labels.json
+│     └── lung_labels.json
 
 │
 
 ├── dataset/
 
-│   ├── CKD/
+│     ├── CKD/
 
-│   ├── Early_Disease_Detection.csv
+│     ├── Early_Disease_Detection.csv
 
-│   ├── Indian Liver Patient Dataset.csv
+│     ├── Indian Liver Patient Dataset.csv
 
-│   └── Lung X-Ray Images/
+│     └── Lung X-Ray Images/
 
-│       ├── Normal
+│             ├── Normal
 
-│       ├── Lung_Opacity
+│             ├── Lung_Opacity
 
-│       └── Viral Pneumonia
+│             └── Viral Pneumonia
 
 │
 
@@ -91,7 +94,7 @@ Chest X-ray Image Dataset
 
 ## ⚙️ Installation
 Clone the Repository
-git clone https://github.com/your-username/Early-Disease-Detection.git
+git clone https://github.com/UMPGHacks/Multi-Disease-Prediction-System.git
 cd Early-Disease-Detection
 Install Dependencies
 pip install -r requirements.txt
